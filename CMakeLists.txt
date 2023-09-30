@@ -44,6 +44,7 @@ Source/Synthesis/vosim.cpp
 Source/Synthesis/zoscillator.cpp
 Source/Utility/dcblock.cpp
 Source/Utility/metro.cpp
+Source/Utility/wavetables.cpp
 )
 
 
