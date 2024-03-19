@@ -86,6 +86,7 @@ using FFTFunction = void (*)(int, RealType *, RealType *);
 template <typename T, FFTFunction<T> fft_func>
 class Tables
 {
+  public:
     static WaveTable Square;
     static WaveTable Sine;
     static WaveTable Tri;

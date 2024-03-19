@@ -12,6 +12,7 @@ namespace daisysp
  *
  * Based on implementation from STK (by Perry R. Cook and Gary P. Scavone, 1995--2021)
  */
+template <typename T, FFTFunction<T> fft>
 class WavetableOsc
 {
   public:
@@ -37,11 +38,13 @@ class WavetableOsc
     {
         switch(wf)
         {
-            case Waveform::WAVE_SIN: SetWaveTable(&Tables::Sine); break;
-            case Waveform::WAVE_TRI: SetWaveTable(&Tables::Tri); break;
-            case Waveform::WAVE_SAW: SetWaveTable(&Tables::Saw); break;
-            case Waveform::WAVE_SQUARE: SetWaveTable(&Tables::Square); break;
-            default: SetWaveTable(&Tables::Sine);
+            case Waveform::WAVE_SIN: SetWaveTable(&Tables<T, fft>::Sine); break;
+            case Waveform::WAVE_TRI: SetWaveTable(&Tables<T, fft>::Tri); break;
+            case Waveform::WAVE_SAW: SetWaveTable(&Tables<T, fft>::Saw); break;
+            case Waveform::WAVE_SQUARE:
+                SetWaveTable(&Tables<T, fft>::Square);
+                break;
+            default: SetWaveTable(&Tables<T, fft>::Sine);
         }
     }
 
