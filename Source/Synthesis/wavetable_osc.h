@@ -2,11 +2,10 @@
 #ifndef DSY_WAVETABLEOSC_H
 #define DSY_WAVETABLEOSC_H
 
-#include "wavetables.h"
+#include "Utility/wavetables.h"
 
 namespace daisysp
 {
-
 /**
  * @brief Wave table oscillator
  *

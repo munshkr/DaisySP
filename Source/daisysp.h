@@ -78,6 +78,7 @@
 #include "Synthesis/variableshapeosc.h"
 #include "Synthesis/vosim.h"
 #include "Synthesis/zoscillator.h"
+#include "Synthesis/wavetable_osc.h"
 
 /** Utility Modules */
 #include "Utility/dcblock.h"
@@ -88,6 +89,7 @@
 #include "Utility/metro.h"
 #include "Utility/samplehold.h"
 #include "Utility/smooth_random.h"
+#include "Utility/wavetables.h"
 
 /** LGPL Modules */
 #ifdef USE_DAISYSP_LGPL
