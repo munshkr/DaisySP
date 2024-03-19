@@ -76,6 +76,7 @@ UTILITY_MOD_DIR = Utility
 UTILITY_MODULES = \
 dcblock \
 metro \
+wavetables \
 
 ######################################
 # source
